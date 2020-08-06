@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <title>Forgot Password</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/loginstyle.css";>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <!-- <a class="navbar-brand" href="#">LibM </a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/">HOME </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li> -->
+        <li class="nav-item active">
+          <a class="nav-link" href="<%=nav[3].link%>"><%=nav[3].name%></a>
+        </li>
+        <li class="nav-item  ">
+         <a class="nav-link" href="<%=nav[4].link%>"><%=nav[4].name%></a>
+       </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Notifications</a>
+          </div>
+        </li> -->
+        
+      </ul>
+      
+    </div>
+  </nav>
+  <section id="main">
+
+<div class="container" id="lib">
+
+  <h2 id="library">Library</h2>
+  
+</div>
+
+
+<div class="container" id="c1">
+  
+  
+ 
+    <h1>Reset Password</h1>
+    <div class="wrap">
+        <form   action="<%=nav[3].link%>" alert onsubmit = "return validateEmail()">  
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">When you fill in your registered email address, you will be sent instructions on how to reset your password.
+        </p>
+         
+        <input type = "text" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;width: 250px;padding: 10px;"
+         id="email" placeholder="Email" required><br>
+        <p5 style="color:rgb(195, 174, 79)">Please enter a valid email id</p5><br>
+        <label for="error" id="error"></label><br>
+          
+          <input  type = "submit"  value="Submit" id="submit" ><br><br>
+          
+          <h6 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Not a member <a href="<%=nav[4].link%>">Sign-Up</a></h6>
+          
+        </form>
+      
+  </div>
+ 
+ 
+
+</div>
+
+
+
+<div class="container">
+<h3 id="hf"> Follow Us</h3>
+<nav aria-label="tfg">
+  <ul class="pagination pagination-md">
+    <li class="page-item">
+      <a class="page-link" id="twitter" href="https://twitter.com/"target="_blank">Twitter</a>
+    </li>
+    <li class="page-item" ><a class="page-link" id="facebook" href="https://www.facebook.com/"target="_blank">Facebook</a></li>
+    <li class="page-item" ><a class="page-link" id="gplus" href="https://google.com/"target="_blank">Google+</a></li>
+  </ul>
+</nav>
+</div>
+</section>
+    
+
+<script src= "/js/forgot.js"></script>
+</body>
+</html>
